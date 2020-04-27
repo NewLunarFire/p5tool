@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'p5hattyregular';
+    src: url('../fonts/p5hatty.woff2') format('woff2'),
+         url('../fonts/p5hatty.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, a:visited {
+    color: white;
+}
+
+body {
+    font-family: p5hattyregular;
+    background-color: #333;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-family: Arial Bold;
+    font-weight: bolder;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem black;
+    transform: skew(-32deg, 0);
+    -webkit-text-stroke: 0.1rem black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid white;
+    padding: 0.3rem;
+}
+
+svg {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
