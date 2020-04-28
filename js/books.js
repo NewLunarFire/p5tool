@@ -1,5 +1,3 @@
-const SVG_NS = 'http://www.w3.org/2000/svg';
-
 const books = [{
     title: "Yongen-Wanderer",
     location: "Your Room",
@@ -181,17 +179,20 @@ function createBookmark(id) {
     const read = localStorage.getItem(id) === "true";
     bookmarks[id] = read;
 
-    const svg = document.createElementNS(SVG_NS, "svg");
-    svg.id = id;
-    svg.setAttribute('viewbox', '-58 0 404 404.54135');
-    svg.setAttribute('width', `${size[0]*scale}`);
-    svg.setAttribute('height', `${size[1]*scale}`);
+    const svg = createSVG({
+        id: id,
+        viewbox: '-58 0 404 404.54135',
+        width: `${size[0]*scale}`,
+        height: `${size[1]*scale}`
+    });
 
-    const path = document.createElementNS(SVG_NS, "path");
-
-    path.setAttribute('d', 'm277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0');
-    path.setAttribute('fill', read ? 'green' : 'white');
-    path.setAttribute('transform', `scale(${scale},${scale})`);
+    const path = createPath(
+        'm277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0',
+        {
+            fill: read ? 'green' : 'white',
+            transform: `scale(${scale},${scale})`
+        }
+    )
 
     svg.appendChild(path);
 
