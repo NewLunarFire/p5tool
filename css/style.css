@@ -48,3 +48,11 @@ svg {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
+
+svg.bookmark path {
+    fill: white;
+}
+
+svg.bookmark.read path {
+    fill: green;
+}

@@ -169,18 +169,31 @@ const books = [{
 
 /* The Shinjuku, Jinbocho and Request Reward books are missing */
 
-const bookmarks = {};
+// Creates slug from title
+function slugify(text) {
+    return text.toLowerCase().replace(/ /g, "-");
+}
+
+const bookmarks = books.reduce((acc, book) => {
+    const slug = slugify(book.title);
+    
+    acc[slug] = {
+        slug,
+        value: localStorage.getItem(`bookmark-${slug}`) || 0,
+        total: book.chapters,
+        svgs: []
+    };
+
+    return acc;
+}, {});
 
 const rem_size = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-function createBookmark(id) {
+function createBookmark() {
     const size = [287, 404];
     const scale = rem_size / Math.max(size[0], size[1]);
-    const read = localStorage.getItem(id) === "true";
-    bookmarks[id] = read;
 
     const svg = createSVG({
-        id: id,
         viewbox: '-58 0 404 404.54135',
         width: `${size[0]*scale}`,
         height: `${size[1]*scale}`
@@ -188,23 +201,35 @@ function createBookmark(id) {
 
     const path = createPath(
         'm277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0',
-        {
-            fill: read ? 'green' : 'white',
-            transform: `scale(${scale},${scale})`
-        }
+        { transform: `scale(${scale},${scale})`}
     )
 
+    svg.classList.add("bookmark");
     svg.appendChild(path);
 
     return svg;
 }
 
 function onClickBookmark(e) {
-    const read = !bookmarks[e.currentTarget.id];
-    bookmarks[e.currentTarget.id] = read;
+    const title = e.currentTarget.getAttribute('data-title');
+    const chapter = parseInt(e.currentTarget.getAttribute('data-chapter'));
+    const bookmark = bookmarks[title];
+    
+    if(chapter === bookmark.value) {
+        bookmark.value = 0;
+    } else {
+        bookmark.value = chapter;
+    }
 
-    e.currentTarget.querySelector("path").setAttribute("fill", read ? "green" : "white");
-    localStorage.setItem(e.currentTarget.id, read);
+    localStorage.setItem(`bookmark-${title}`, bookmark.value);
+
+    for(var i = 0; i < bookmark.total; i++) {
+        if(i < bookmark.value) {
+            bookmark.svgs[i].classList.add("read");
+        } else {
+            bookmark.svgs[i].classList.remove("read");
+        }
+    }
 }
 
 books.forEach(book => {
@@ -231,12 +256,22 @@ books.forEach(book => {
     autoread_td.textContent = book.auto_read ? "Yes" : "No";
 
     const progress_td = document.createElement("td");
-    const title_slug = book.title.toLowerCase().replace(" ", "-");
+
+    const bookmark = bookmarks[slugify(book.title)];
 
     for(var i = 0; i < book.chapters; i++) {
-        const svg = createBookmark(`bookmark-${title_slug}-${i+1}`);
+        const svg = createBookmark();
+
+        svg.setAttribute('data-title', bookmark.slug);
+        svg.setAttribute('data-chapter', i+1);
+
+        if(i < bookmark.value) {
+            svg.classList.add("read");
+        }
+
         svg.onclick = onClickBookmark;
         progress_td.appendChild(svg);
+        bookmark.svgs.push(svg);
     }
 
     tr.appendChild(title_td);
