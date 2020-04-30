@@ -12,7 +12,7 @@ window.createPath = function(path, attributes) {
     const path_el = document.createElementNS(SVG_NS, "path");
     
     path_el.setAttribute('d', path);
-    Object.keys(attributes).forEach(name => path_el.setAttribute(name, attributes[name]));
+    if(!!attributes) Object.keys(attributes).forEach(name => path_el.setAttribute(name, attributes[name]));
 
     return path_el;
 }

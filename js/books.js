@@ -169,11 +169,6 @@ const books = [{
 
 /* The Shinjuku, Jinbocho and Request Reward books are missing */
 
-// Creates slug from title
-function slugify(text) {
-    return text.toLowerCase().replace(/ /g, "-");
-}
-
 const bookmarks = books.reduce((acc, book) => {
     const slug = slugify(book.title);
     
