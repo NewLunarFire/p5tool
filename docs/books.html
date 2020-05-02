@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Persona 5 Tool</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="icon" type=”image/x-icon” href="favicon.ico">
+    </head>
+    <body>
+        <h1><a href="index.html">PERSONA5 TOOL</a></h1>
+
+<h2><img src="img/headings/books.png" alt="Books" /></h2>
+<h3>Magazines</h3>
+<p>Magazines are books that are one chapter long and unlock new locations for you to visit. Most of them can only be visited if you bring a confidant with you. They are auto-read if you already visited the location when leveling up a confidant.</p>
+<table id="magazines">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Unlock conditions</th>
+            <th>Reward</th>
+            <th>Price</th>
+            <th>Acquired</th>
+            <th>Progress</th>
+        </tr>
+    </thead>
+    <tbody><tr>
+            <td>Yongen-Wanderer</td>
+            <td>Your Room</td>
+            <td>Clean your room</td>
+            <td>Shortcuts to Batting Cages and Bath</td>
+            <td>-</td>
+            <td><input type="checkbox" id="cb-yongen-wanderer" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="yongen-wanderer" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Weekend Parks</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 5/18</td>
+            <td>Unlocks Inokashira Park</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-weekend-parks" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="weekend-parks" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Vague</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 5/18</td>
+            <td>Unlocks Harajuku</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-vague" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="vague" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Nightlife Hotspots</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 6/1</td>
+            <td>Unlocks Odaiba Seaside Park</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-nightlife-hotspots" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="nightlife-hotspots" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Fishpond Spotter</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 7/16</td>
+            <td>Unlocks Ichigaya</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-fishpond-spotter" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="fishpond-spotter" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Tokyo Shrines</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 9/1</td>
+            <td>Unlocks Meiji Shrine</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-tokyo-shrines" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="tokyo-shrines" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Musty Pages</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 9/1</td>
+            <td>Unlocks Jinbocho</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-musty-pages" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="musty-pages" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Museum of Stars</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 9/1</td>
+            <td>Unlocks Ikebukuro</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-museum-of-stars" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="museum-of-stars" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Chinese Sweets</td>
+            <td>Mementos Request: Part-time Job, Full-time Hell</td>
+            <td>-</td>
+            <td>Unlocks Chinatown</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-chinese-sweets" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="chinese-sweets" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Theme Park Escort</td>
+            <td>Mementos Request: We Aren&#39;t Just Your Slaves</td>
+            <td>-</td>
+            <td>Unlocks Destinyland</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-theme-park-escort" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="theme-park-escort" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Shita-machi Reborn</td>
+            <td>Mementos Request: Who&#39;s Muscling in Yogen-Jaya?</td>
+            <td>-</td>
+            <td>Unlocks Asakusa</td>
+            <td>1800</td>
+            <td><input type="checkbox" id="cb-shita-machi-reborn" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="shita-machi-reborn" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr></tbody>
+</table>
+
+<h3 style="margin-top: 2rem;">Chapter Books</h3>
+<p>Chapter books have different number of chapters. They boost various social stats and certain activities.</p>
+<table id="books">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Unlock conditions</th>
+            <th>Reward</th>
+            <th>Price</th>
+            <th>Acquired</th>
+            <th>Progress</th>
+        </tr>
+    </thead>
+    <tbody><tr>
+            <td>The Great Thief</td>
+            <td>School Library</td>
+            <td>Unlock Arsene</td>
+            <td>Knowledge &#43;3</td>
+            <td>-</td>
+            <td><input type="checkbox" id="cb-the-great-thief" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="the-great-thief" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="the-great-thief" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Pirate Legend</td>
+            <td>School Library</td>
+            <td>Ryuji Joins Party</td>
+            <td>Guts &#43;3</td>
+            <td>-</td>
+            <td><input type="checkbox" id="cb-pirate-legend" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="pirate-legend" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="pirate-legend" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Zorro the Outlaw</td>
+            <td>School Library</td>
+            <td>Morgana Joins Party</td>
+            <td>Kindness &#43;3</td>
+            <td>-</td>
+            <td><input type="checkbox" id="cb-zorro-the-outlaw" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="zorro-the-outlaw" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="zorro-the-outlaw" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>The Alluring Dancer</td>
+            <td>School Library</td>
+            <td>Ann Joins Party</td>
+            <td>Charm &#43;3</td>
+            <td>-</td>
+            <td><input type="checkbox" id="cb-the-alluring-dancer" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="the-alluring-dancer" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="the-alluring-dancer" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>The Gallant Rogue</td>
+            <td>School Library</td>
+            <td>Yusuke Joins Party</td>
+            <td>Guts &#43;3</td>
+            <td>-</td>
+            <td><input type="checkbox" id="cb-the-gallant-rogue" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="the-gallant-rogue" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="the-gallant-rogue" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>The Illusory Popess</td>
+            <td>School Library</td>
+            <td>Makoto Joins Party</td>
+            <td>Kindness &#43;3</td>
+            <td>-</td>
+            <td><input type="checkbox" id="cb-the-illusory-popess" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="the-illusory-popess" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="the-illusory-popess" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Cry of Cthulu</td>
+            <td>School Library</td>
+            <td>Futaba Joins Party</td>
+            <td>Guts &#43;3</td>
+            <td>-</td>
+            <td><input type="checkbox" id="cb-cry-of-cthulu" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="cry-of-cthulu" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="cry-of-cthulu" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Woman in the Dark</td>
+            <td>School Library</td>
+            <td>Haru Joins Party</td>
+            <td>Proficiency &#43;3</td>
+            <td>-</td>
+            <td><input type="checkbox" id="cb-woman-in-the-dark" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="woman-in-the-dark" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="woman-in-the-dark" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Tidying the Heart</td>
+            <td>Shibuya Bookstore</td>
+            <td>-</td>
+            <td>Proficiency &#43;3</td>
+            <td>700</td>
+            <td><input type="checkbox" id="cb-tidying-the-heart" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="tidying-the-heart" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="tidying-the-heart" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Buchiko&#39;s Story</td>
+            <td>Shibuya Bookstore</td>
+            <td>-</td>
+            <td>Kindness &#43;3</td>
+            <td>700</td>
+            <td><input type="checkbox" id="cb-buchikos-story" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="buchikos-story" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="buchikos-story" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Medjed Menace</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 5/6</td>
+            <td>Knowledge &#43;3</td>
+            <td>1200</td>
+            <td><input type="checkbox" id="cb-medjed-menace" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="medjed-menace" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="medjed-menace" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Wise Men&#39;s Words</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 6/1</td>
+            <td>Knowledge &#43;3</td>
+            <td>700</td>
+            <td><input type="checkbox" id="cb-wise-mens-words" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="wise-mens-words" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="wise-mens-words" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Ghost Encounters</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 7/1</td>
+            <td>Guts &#43;3</td>
+            <td>700</td>
+            <td><input type="checkbox" id="cb-ghost-encounters" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="ghost-encounters" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="ghost-encounters" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Playing the Game</td>
+            <td>Shibuya Bookstore</td>
+            <td>Available on 7/16</td>
+            <td>Charm &#43;3</td>
+            <td>700</td>
+            <td><input type="checkbox" id="cb-playing-the-game" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="playing-the-game" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="playing-the-game" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Flower-pedia</td>
+            <td>Shinjuku Bookstore</td>
+            <td>Work at flower shop once</td>
+            <td>Better flower descriptions</td>
+            <td>2800</td>
+            <td><input type="checkbox" id="cb-flower-pedia" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="flower-pedia" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Batting Science</td>
+            <td>Shinjuku Bookstore</td>
+            <td>Go to batting cages once</td>
+            <td>Third eye slows down ball</td>
+            <td>2800</td>
+            <td><input type="checkbox" id="cb-batting-science" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="batting-science" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Essence of Fishing</td>
+            <td>Shinjuku Bookstore</td>
+            <td>Go fishing once</td>
+            <td>Third eye shows rare fish</td>
+            <td>2800</td>
+            <td><input type="checkbox" id="cb-essence-of-fishing" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="essence-of-fishing" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Cinema Treasures</td>
+            <td>Shinjuku Bookstore</td>
+            <td>Go to movie theater once</td>
+            <td>More skill points from going to theater</td>
+            <td>2800</td>
+            <td><input type="checkbox" id="cb-cinema-treasures" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="cinema-treasures" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Game Secrets</td>
+            <td>Shinjuku Bookstore</td>
+            <td>Play video game once</td>
+            <td>Makes playing games easier</td>
+            <td>2800</td>
+            <td><input type="checkbox" id="cb-game-secrets" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="game-secrets" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Master Swordsman</td>
+            <td>Jinbocho</td>
+            <td>-</td>
+            <td>Guts &#43;3</td>
+            <td>8000</td>
+            <td><input type="checkbox" id="cb-master-swordsman" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="master-swordsman" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="master-swordsman" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="master-swordsman" data-chapter="3">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Call Me Chief</td>
+            <td>Jinbocho</td>
+            <td>-</td>
+            <td>Kindness &#43;3</td>
+            <td>8000</td>
+            <td><input type="checkbox" id="cb-call-me-chief" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="call-me-chief" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="call-me-chief" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="call-me-chief" data-chapter="3">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Reckless Casanova</td>
+            <td>Jinbocho</td>
+            <td>-</td>
+            <td>Charm &#43;3</td>
+            <td>8000</td>
+            <td><input type="checkbox" id="cb-reckless-casanova" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="reckless-casanova" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="reckless-casanova" data-chapter="2">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="reckless-casanova" data-chapter="3">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr><tr>
+            <td>Speed Reading *</td>
+            <td>Jinbocho</td>
+            <td>-</td>
+            <td>Can read 2 chapters of a book at once</td>
+            <td>12000</td>
+            <td><input type="checkbox" id="cb-speed-reading" /></td>
+            <td>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bookmark" viewbox="-58 0 404 404.54135" width="16px" height="16px" data-title="speed-reading" data-chapter="1">
+                        <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0" />
+                    </svg></td>
+        </tr></tbody>
+    <tfoot>
+        <td colspan="8">* Speed Reading can be borrowed from the school library in Royal after July 1st</td>
+    </tfoot>
+</table>
+<script type="text/javascript" src="js/books.js"></script>
+
+    </body>
+</html>

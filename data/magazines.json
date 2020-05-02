@@ -1,0 +1,77 @@
+[{
+    "title": "Yongen-Wanderer",
+    "location": "Your Room",
+    "condition": "Clean your room",
+    "chapters": 1,
+    "reward": "Shortcuts to Batting Cages and Bath"
+}, {
+    "title": "Weekend Parks",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 5/18",
+    "chapters": 1,
+    "reward": "Unlocks Inokashira Park",
+    "price": 1800
+}, {
+    "title": "Vague",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 5/18",
+    "chapters": 1,
+    "reward": "Unlocks Harajuku",
+    "price": 1800
+}, {
+    "title": "Nightlife Hotspots",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 6/1",
+    "chapters": 1,
+    "reward": "Unlocks Odaiba Seaside Park",
+    "price": 1800
+}, {
+    "title": "Fishpond Spotter",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 7/16",
+    "chapters": 1,
+    "reward": "Unlocks Ichigaya",
+    "price": 1800
+}, {
+    "title": "Tokyo Shrines",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 9/1",
+    "chapters": 1,
+    "reward": "Unlocks Meiji Shrine",
+    "price": 1800
+}, {
+    "title": "Musty Pages",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 9/1",
+    "chapters": 1,
+    "reward": "Unlocks Jinbocho",
+    "price": 1800
+}, {
+    "title": "Museum of Stars",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 9/1",
+    "chapters": 1,
+    "reward": "Unlocks Ikebukuro",
+    "price": 1800
+}, {
+    "title": "Chinese Sweets",
+    "location": "Mementos Request: Part-time Job, Full-time Hell",
+    "condition": "-",
+    "chapters": 1,
+    "reward": "Unlocks Chinatown",
+    "price": 1800
+}, {
+    "title": "Theme Park Escort",
+    "location": "Mementos Request: We Aren't Just Your Slaves",
+    "condition": "-",
+    "chapters": 1,
+    "reward": "Unlocks Destinyland",
+    "price": 1800
+}, {
+    "title": "Shita-machi Reborn",
+    "location": "Mementos Request: Who's Muscling in Yogen-Jaya?",
+    "condition": "-",
+    "chapters": 1,
+    "reward": "Unlocks Asakusa",
+    "price": 1800
+}]

@@ -1,0 +1,4 @@
+title = "PERSONA5 TOOL"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+uglyurls = true
+publishDir = "docs"

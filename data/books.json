@@ -1,0 +1,154 @@
+[{
+    "title": "The Great Thief",
+    "location": "School Library",
+    "condition": "Unlock Arsene",
+    "chapters": 2,
+    "reward": "Knowledge +3"
+}, {
+    "title": "Pirate Legend",
+    "location": "School Library",
+    "condition": "Ryuji Joins Party",
+    "chapters": 2,
+    "reward": "Guts +3"
+}, {
+    "title": "Zorro the Outlaw",
+    "location": "School Library",
+    "condition": "Morgana Joins Party",
+    "chapters": 2,
+    "reward": "Kindness +3"
+}, {
+    "title": "The Alluring Dancer",
+    "location": "School Library",
+    "condition": "Ann Joins Party",
+    "chapters": 2,
+    "reward": "Charm +3"
+}, {
+    "title": "The Gallant Rogue",
+    "location": "School Library",
+    "condition": "Yusuke Joins Party",
+    "chapters": 2,
+    "reward": "Guts +3"
+}, {
+    "title": "The Illusory Popess",
+    "location": "School Library",
+    "condition": "Makoto Joins Party",
+    "chapters": 2,
+    "reward": "Kindness +3"
+}, {
+    "title": "Cry of Cthulu",
+    "location": "School Library",
+    "condition": "Futaba Joins Party",
+    "chapters": 2,
+    "reward": "Guts +3"
+}, {
+    "title": "Woman in the Dark",
+    "location": "School Library",
+    "condition": "Haru Joins Party",
+    "chapters": 2,
+    "reward": "Proficiency +3"
+}, {
+    "title": "Tidying the Heart",
+    "location": "Shibuya Bookstore",
+    "condition": "-",
+    "chapters": 2,
+    "reward": "Proficiency +3",
+    "price": 700
+}, {
+    "title": "Buchiko's Story",
+    "location": "Shibuya Bookstore",
+    "condition": "-",
+    "chapters": 2,
+    "reward": "Kindness +3",
+    "price": 700
+}, {
+    "title": "Medjed Menace",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 5/6",
+    "chapters": 2,
+    "reward": "Knowledge +3",
+    "price": 1200
+}, {
+    "title": "Wise Men's Words",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 6/1",
+    "chapters": 2,
+    "reward": "Knowledge +3",
+    "price": 700
+}, {
+    "title": "Ghost Encounters",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 7/1",
+    "chapters": 2,
+    "reward": "Guts +3",
+    "price": 700
+}, {
+    "title": "Playing the Game",
+    "location": "Shibuya Bookstore",
+    "condition": "Available on 7/16",
+    "chapters": 2,
+    "reward": "Charm +3",
+    "price": 700
+}, {
+    "title": "Flower-pedia",
+    "location": "Shinjuku Bookstore",
+    "condition": "Work at flower shop once",
+    "chapters": 1,
+    "reward": "Better flower descriptions",
+    "price": 2800
+}, {
+    "title": "Batting Science",
+    "location": "Shinjuku Bookstore",
+    "condition": "Go to batting cages once",
+    "chapters": 1,
+    "reward": "Third eye slows down ball",
+    "price": 2800
+}, {
+    "title": "Essence of Fishing",
+    "location": "Shinjuku Bookstore",
+    "condition": "Go fishing once",
+    "chapters": 1,
+    "reward": "Third eye shows rare fish",
+    "price": 2800
+}, {
+    "title": "Cinema Treasures",
+    "location": "Shinjuku Bookstore",
+    "condition": "Go to movie theater once",
+    "chapters": 1,
+    "reward": "More skill points from going to theater",
+    "price": 2800
+}, {
+    "title": "Game Secrets",
+    "location": "Shinjuku Bookstore",
+    "condition": "Play video game once",
+    "chapters": 1,
+    "reward": "Makes playing games easier",
+    "price": 2800
+}, {
+    "title": "Master Swordsman",
+    "location": "Jinbocho",
+    "condition": "-",
+    "chapters": 3,
+    "reward": "Guts +3",
+    "price": 8000
+}, {
+    "title": "Call Me Chief",
+    "location": "Jinbocho",
+    "condition": "-",
+    "chapters": 3,
+    "reward": "Kindness +3",
+    "price": 8000
+}, {
+    "title": "Reckless Casanova",
+    "location": "Jinbocho",
+    "condition": "-",
+    "chapters": 3,
+    "reward": "Charm +3",
+    "price": 8000
+}, {
+    "title": "Speed Reading *",
+    "location": "Jinbocho",
+    "condition": "-",
+    "chapters": 1,
+    "reward": "Can read 2 chapters of a book at once",
+    "price": 12000
+}]
